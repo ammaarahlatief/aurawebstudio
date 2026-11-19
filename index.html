@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Web Studio — Custom-Coded Websites for South African &amp; International Brands</title>
+  <meta name="description" content="Aura Web Studio crafts custom-coded websites from scratch using HTML, CSS, and JavaScript for South African and international small businesses and boutique brands." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='48' height='48' rx='12' fill='%23D2EFE2'/%3E%3Cpath d='M34.38 35.75A18.5 18.5 0 1 1 33.39 7.42' stroke='%23132A23' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M22 10L14 31M16.6 24.5H24.8M22 10L25.6 19.5' stroke='%23132A23' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='25.8' y='20.8' width='2.2' height='2.2' rx='0.35' fill='%23132A23'/%3E%3Crect x='28.8' y='19.6' width='1.9' height='1.9' rx='0.35' fill='%2338B88A'/%3E%3Crect x='27.2' y='24.2' width='2.1' height='2.1' rx='0.35' fill='%23132A23'/%3E%3Crect x='30.4' y='22.6' width='1.9' height='1.9' rx='0.35' fill='%2338B88A'/%3E%3Crect x='28.6' y='27.8' width='2.0' height='2.0' rx='0.35' fill='%23132A23' opacity='0.8'/%3E%3Crect x='32.8' y='20.2' width='1.7' height='1.7' rx='0.35' fill='%23132A23' opacity='0.75'/%3E%3Crect x='32.2' y='25.6' width='1.8' height='1.8' rx='0.35' fill='%2338B88A' opacity='0.8'/%3E%3Crect x='35.6' y='22.8' width='1.6' height='1.6' rx='0.35' fill='%2338B88A' opacity='0.6'/%3E%3Crect x='38.4' y='20.8' width='1.4' height='1.4' rx='0.35' fill='%23132A23' opacity='0.45'/%3E%3Crect x='40.8' y='23.2' width='1.3' height='1.3' rx='0.35' fill='%2338B88A' opacity='0.35'/%3E%3Ccircle cx='34.8' cy='10.0' r='2.2' fill='%2338B88A'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#" class="brand" aria-label="Aura Web Studio Home">
+        <svg class="brand-mark" width="46" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M34.38 35.75A18.5 18.5 0 1 1 33.39 7.42" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+          <path d="M22 10L14 31M16.6 24.5H24.8" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M22 10L25.6 19.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+          <rect x="25.8" y="20.8" width="2.2" height="2.2" rx="0.35" fill="currentColor" />
+          <rect x="28.8" y="19.6" width="1.9" height="1.9" rx="0.35" fill="#38B88A" />
+          <rect x="27.2" y="24.2" width="2.1" height="2.1" rx="0.35" fill="currentColor" opacity="0.94" />
+          <rect x="30.4" y="22.6" width="1.9" height="1.9" rx="0.35" fill="#38B88A" opacity="0.92" />
+          <rect x="28.6" y="27.8" width="2.0" height="2.0" rx="0.35" fill="currentColor" opacity="0.84" />
+          <rect x="32.8" y="20.2" width="1.7" height="1.7" rx="0.35" fill="currentColor" opacity="0.76" />
+          <rect x="32.2" y="25.6" width="1.8" height="1.8" rx="0.35" fill="#38B88A" opacity="0.80" />
+          <rect x="30.2" y="31.2" width="1.8" height="1.8" rx="0.35" fill="currentColor" opacity="0.68" />
+          <rect x="35.6" y="22.8" width="1.6" height="1.6" rx="0.35" fill="#38B88A" opacity="0.66" />
+          <rect x="34.8" y="28.4" width="1.6" height="1.6" rx="0.35" fill="currentColor" opacity="0.58" />
+          <rect x="33.4" y="32.6" width="1.5" height="1.5" rx="0.35" fill="#38B88A" opacity="0.56" />
+          <rect x="38.4" y="20.8" width="1.4" height="1.4" rx="0.35" fill="currentColor" opacity="0.49" />
+          <rect x="38.0" y="25.4" width="1.5" height="1.5" rx="0.35" fill="#38B88A" opacity="0.51" />
+          <rect x="37.2" y="30.2" width="1.4" height="1.4" rx="0.35" fill="currentColor" opacity="0.43" />
+          <rect x="40.8" y="23.2" width="1.3" height="1.3" rx="0.35" fill="#38B88A" opacity="0.37" />
+          <rect x="40.2" y="27.6" width="1.3" height="1.3" rx="0.35" fill="currentColor" opacity="0.31" />
+          <rect x="42.8" y="21.4" width="1.1" height="1.1" rx="0.35" fill="currentColor" opacity="0.24" />
+          <rect x="43.2" y="25.6" width="1.2" height="1.2" rx="0.35" fill="#38B88A" opacity="0.25" />
+          <rect x="41.8" y="30.4" width="1.1" height="1.1" rx="0.35" fill="#38B88A" opacity="0.20" />
+          <rect x="45.2" y="23.8" width="1.0" height="1.0" rx="0.35" fill="currentColor" opacity="0.14" />
+          <circle cx="34.8" cy="10.0" r="2.2" fill="#38B88A" />
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">Aura</span>
+          <span class="brand-sub">web studio</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNav">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primaryNav" class="nav-links" aria-label="Primary Navigation">
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">Studio</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn-sm">Start a Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Cape Town Based · Working Worldwide</p>
+          <h1>Hand-coded websites built for brands with <em>character</em>.</h1>
+          <p class="hero-lead">
+            No bloated templates or cookie-cutter page builders. Based in South Africa and working with clients worldwide, Aura Web Studio writes clean, fast HTML, CSS, and JavaScript from scratch for small businesses and boutique labels.
+          </p>
+          <div class="hero-actions">
+            <a href="#pricing" class="btn">Explore Packages</a>
+            <a href="#work" class="btn btn-ghost">View Selected Work</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Studio Craft Summary">
+          <div class="hero-card-badge">100% Custom Code</div>
+          <p class="hero-card-quote">“Built to feel like your shop—not a recycled theme.”</p>
+          <ul class="hero-highlights">
+            <li><strong>Tailored layouts</strong> shaped around your brand voice</li>
+            <li><strong>Mobile-first responsiveness</strong> across phones and desktops</li>
+            <li><strong>Direct WhatsApp &amp; email</strong> inquiry flow with zero friction</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Built from scratch for independent brands</h2>
+        </div>
+
+        <div class="work-layout">
+          <article class="portfolio-card">
+            <div class="portfolio-preview" aria-hidden="true">
+              <div class="preview-window">
+                <div class="preview-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="preview-body">
+                  <span class="preview-tag">Stainless Steel Jewellery</span>
+                  <h3>4evercharmed</h3>
+                  <p>Custom storefront layout, product showcase, delivery terms, and customer inquiry flow.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-details">
+              <div class="portfolio-meta">
+                <span class="pill">Live Client Site</span>
+                <span class="portfolio-url">4evercharmed.co.za</span>
+              </div>
+              <h3>4evercharmed Boutique Storefront</h3>
+              <p>
+                A custom-coded e-commerce experience for a South African stainless steel charm and jewellery brand, designed for clear browsing, smooth mobile shopping, and straightforward order inquiries.
+              </p>
+              <a href="https://4evercharmed.co.za" target="_blank" rel="noopener noreferrer" class="text-link">Visit 4evercharmed.co.za &rarr;</a>
+            </div>
+          </article>
+
+          <blockquote class="review-card">
+            <p class="review-mark" aria-hidden="true">“</p>
+            <p class="review-text">
+              Having a site coded specifically for the brand instead of squeezed into a generic template made everything look intentional, clean, and easy for customers to navigate on their phones.
+            </p>
+            <footer class="review-author">
+              <strong>4evercharmed</strong>
+              <span>Boutique Jewellery Brand, South Africa</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section section-tinted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">How We Work</p>
+          <h2>A calm, three-step build process</h2>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step">
+            <span class="step-num">01</span>
+            <h3>Scope &amp; Direction</h3>
+            <p>We align on your brand mood, pages, features, and goals over WhatsApp or email—no confusing jargon.</p>
+          </article>
+          <article class="process-step">
+            <span class="step-num">02</span>
+            <h3>Custom Code &amp; Preview</h3>
+            <p>Your layout, styling, and interactive details are written cleanly in HTML, CSS, and JavaScript with live previews to review.</p>
+          </article>
+          <article class="process-step">
+            <span class="step-num">03</span>
+            <h3>Launch &amp; Handover</h3>
+            <p>Once approved and settled, your site goes live cleanly on your hosting or domain, ready to share with customers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Transparent Pricing</p>
+          <h2>Packages tailored to where your brand is</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <p class="price-tier">Starter</p>
+            <h3>Landing Page</h3>
+            <p class="price-amount">R3,500</p>
+            <p class="price-desc">Ideal for launches, promos, market vendors, or a focused single-page presence.</p>
+            <ul class="price-features">
+              <li>Custom single-page layout from scratch</li>
+              <li>Mobile &amp; desktop responsive styling</li>
+              <li>WhatsApp &amp; email contact links</li>
+            </ul>
+            <button type="button" class="btn btn-full package-btn" data-package="Landing Page (R3,500)">Inquire About Landing Page</button>
+          </article>
+
+          <article class="price-card price-card-featured">
+            <p class="price-tier">Most Popular</p>
+            <h3>Boutique Business Site</h3>
+            <p class="price-amount">R6,500+</p>
+            <p class="price-desc">For growing local businesses and studios needing dedicated sections and stronger brand storytelling.</p>
+            <ul class="price-features">
+              <li>Multi-section custom editorial layout</li>
+              <li>Interactive UI &amp; tailored visual polish</li>
+              <li>Direct inquiry routing &amp; launch support</li>
+            </ul>
+            <button type="button" class="btn btn-full package-btn" data-package="Boutique Business Site (R6,500+)">Inquire About Business Site</button>
+          </article>
+
+          <article class="price-card">
+            <p class="price-tier">Full Shop</p>
+            <h3>E-Commerce Storefront</h3>
+            <p class="price-amount">R10,000+</p>
+            <p class="price-desc">Built for brands selling products online with clear catalog presentation and customer order flow.</p>
+            <ul class="price-features">
+                 <li>Custom product showcase &amp; storefront flow</li>
+              <li>Clear delivery &amp; policy sections</li>
+              <li>Mobile-friendly product browsing</li>
+            </ul>
+            <button type="button" class="btn btn-full package-btn" data-package="E-Commerce Storefront (R10,000+)">Inquire About Storefront</button>
+          </article>
+        </div>
+
+        <div class="care-banner">
+          <div>
+            <span class="care-tag">Optional Ongoing Care</span>
+            <h3>Monthly Care Plan — R450/month</h3>
+            <p>Keep your site fresh with minor text/image updates, check-ups, and small tweaks without starting a whole new project.</p>
+          </div>
+          <button type="button" class="btn btn-ghost package-btn" data-package="Monthly Care Plan (R450/month)">Ask About Care Plan</button>
+        </div>
+
+        <p class="pricing-note">
+          <strong>Payment terms:</strong> All website builds require a <strong>50% deposit upfront</strong> to secure your project slot and begin development, with the remaining <strong>50% payable upon completion</strong> prior to final launch and handover. International clients are quoted a clear <strong>flate rate</strong> upon scope confirmation.
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section section-tinted">
+      <div class="container editorial-bio">
+        <p class="eyebrow">About Aura Web Studio</p>
+        <h2>Thoughtful web design without the agency fluff</h2>
+        <p>
+          Aura Web Studio is run by Ammaarah Latief, a Cape Town-based developer who builds every website by hand—line by line in HTML, CSS, and JavaScript—so every spacing choice, hover state, and layout belongs to your brand rather than a pre-made template.
+        </p>
+        <p>
+          With a background balancing analytical problem-solving, brand building, and hands-on coding, I focus on creating sites that feel intentional, load cleanly, and turn visitors into inquiries—whether you run a local South African business or a boutique brand abroad.
+        </p>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container faq-container">
+        <div class="section-heading">
+          <p class="eyebrow">Questions</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Do you use templates or WordPress/Wix builders?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>No. Every site is custom-coded from scratch using HTML, CSS, and JavaScript so your layout stays lightweight, tailored, and free of template bloat.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>How do I start a project or ask about pricing?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Click any package button to pre-fill a WhatsApp message with your chosen tier, or reach out directly via WhatsApp, email, or Instagram.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>What does the R450/month care plan cover?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>It covers ongoing small updates—such as swapping photos, updating prices or announcements, and keeping your live site running smoothly.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>How do payments work?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>A 50% deposit is required upfront to confirm your booking and kick off development. Once your site is built, reviewed, and approved, the remaining 50% balance is settled before final domain connection and launch.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>How long does a website take to build?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Typical turnaround times are <strong>3–5 business days</strong> for a Landing Page, <strong>1–2 weeks</strong> for a Boutique Business Site, and <strong>2–3 weeks</strong> for an E-Commerce Storefront—depending on page count and how quickly your text and photos are ready.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Do you work with international clients outside South Africa?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. While Aura Web Studio is based in South Africa, everything is built and delivered remotely—making it easy to work with small businesses, creators, and boutique brands anywhere in the world. International projects are priced as a clear flat rate once your scope is confirmed, with quotes available in USD, GBP, or EUR upon request.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-tinted">
+      <div class="container contact-box">
+        <p class="eyebrow">Get In Touch</p>
+        <h2>Ready to build something custom?</h2>
+        <p class="contact-sub">
+          Selected package: <strong id="selectedPackageLabel">General Inquiry</strong>
+        </p>
+
+        <div class="contact-actions">
+          <a id="whatsappLink" href="https://wa.me/27839561961?text=Hi%20Aura%20Web%20Studio%2C%20I%27d%20like%20to%20chat%20about%20a%20custom%20website." target="_blank" rel="noopener noreferrer" class="btn">Message on WhatsApp</a>
+          <a href="mailto:aurawebbstudio@gmail.com?subject=Aura%20Web%20Studio%20Inquiry" class="btn btn-ghost">Send an Email</a>
+          <a href="https://instagram.com/aura_webstudio" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Aura Web Studio &middot; Designed by Ammaarah Latief</p>
+      <a href="#">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
