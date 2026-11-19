@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Smart WhatsApp package inquiry routing
-  const phoneNumber = "27000000000"; // Replace with your WhatsApp number (country code + number, no +)
+  const phoneNumber = "27839561961"; // Replace with your WhatsApp number (country code + number, no +)
   const selectedLabel = document.getElementById("selectedPackageLabel");
   const whatsappLink = document.getElementById("whatsappLink");
 
   const updateWhatsAppHref = (pkgName) => {
     const message = pkgName
-      ? `Hi Aura Web Studio, I'd like to inquire about the ${pkgName} package.`
-      : "Hi Aura Web Studio, I'd like to chat about a custom website.";
+      ? `Hi Ammaarah, I'd like to enquire about the ${pkgName} package.`
+      : "Hi Ammaarah, I'd like to chat about a custom website.";
     if (whatsappLink) {
       whatsappLink.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     }
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".package-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      const pkg = btn.getAttribute("data-package") || "General Inquiry";
+      const pkg = btn.getAttribute("data-package") || "General Enquiry";
       if (selectedLabel) {
         selectedLabel.textContent = pkg;
       }
