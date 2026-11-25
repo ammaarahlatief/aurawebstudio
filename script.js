@@ -34,21 +34,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 4. Fade and slide things in as you scroll
+  // 4. Fade and slide things in as you scroll (mobile-safe)
   const revealEls = document.querySelectorAll(".reveal");
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
-  );
 
-  revealEls.forEach((el) => observer.observe(el));
+  const revealInView = () => {
+    const triggerBottom = window.innerHeight * 0.96;
+    revealEls.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= triggerBottom) {
+        el.classList.add("visible");
+      }
+    });
+  };
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.02, rootMargin: "0px 0px 50px 0px" }
+    );
+
+    revealEls.forEach((el) => observer.observe(el));
+    window.addEventListener("scroll", revealInView, { passive: true });
+    setTimeout(revealInView, 150);
+  } else {
+    revealEls.forEach((el) => el.classList.add("visible"));
+  }
 
   // 5. Soft mint glow following the mouse on cards
   document.querySelectorAll(".spotlight-card").forEach((card) => {

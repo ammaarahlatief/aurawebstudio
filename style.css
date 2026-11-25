@@ -60,7 +60,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 900;
-  background: rgba(248, 252, 250, 0.82);
+  background: rgba(248, 252, 250, 0.88);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
@@ -68,7 +68,7 @@ body {
 }
 
 .site-header.scrolled {
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 8px 30px rgba(19, 42, 35, 0.06);
 }
 
@@ -382,6 +382,7 @@ h1 {
 
 /* Hero Craft Card */
 .craft-card {
+  background-color: #132A23;
   background: var(--forest);
   color: #F4FBF8;
   border-radius: var(--radius);
@@ -436,8 +437,8 @@ h1 {
 }
 
 .code-stage {
-  background: rgba(11, 26, 21, 0.75);
-  border: 1px solid rgba(210, 239, 226, 0.1);
+  background: rgba(11, 26, 21, 0.85);
+  border: 1px solid rgba(210, 239, 226, 0.12);
   border-radius: var(--radius-sm);
   padding: 16px;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -446,7 +447,7 @@ h1 {
   margin-bottom: 18px;
 }
 
-.c-muted { color: rgba(210, 239, 226, 0.35); margin-right: 8px; }
+.c-muted { color: rgba(210, 239, 226, 0.42); margin-right: 8px; }
 .c-kw { color: #7CE8C0; }
 .c-str { color: #D2EFE2; }
 .c-bool { color: #56D4A3; }
@@ -481,7 +482,7 @@ h1 {
   font-size: 0.78rem;
   padding: 6px 11px;
   border-radius: 999px;
-  background: rgba(210, 239, 226, 0.08);
+  background: rgba(210, 239, 226, 0.09);
   color: #D2EFE2;
 }
 
@@ -507,6 +508,9 @@ h1 {
 
 /* Marquee Ticker */
 .studio-marquee {
+  position: relative;
+  z-index: 2;
+  background-color: #132A23;
   background: var(--forest);
   color: var(--mint-soft);
   padding: 13px 0;
@@ -646,7 +650,7 @@ h2 {
 
 .device-switch {
   display: inline-flex;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.75);
   padding: 3px;
   border-radius: 999px;
   border: 1px solid rgba(19, 42, 35, 0.1);
@@ -744,7 +748,7 @@ h2 {
 .preview-body p {
   font-size: 0.8rem;
   margin: 0 0 12px;
-  opacity: 0.82;
+  opacity: 0.85;
   line-height: 1.45;
 }
 
@@ -795,6 +799,7 @@ h2 {
 .portfolio-url {
   font-size: 0.78rem;
   color: var(--text-muted);
+  word-break: break-word;
 }
 
 .portfolio-details h3 {
@@ -874,12 +879,13 @@ h2 {
 }
 
 .compare-old {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.72);
   border: 1px solid var(--border);
   color: var(--text-muted);
 }
 
 .compare-aura {
+  background-color: #132A23;
   background: var(--forest);
   color: #F4FBF8;
   border: 1px solid rgba(56, 184, 138, 0.35);
@@ -1169,7 +1175,7 @@ h2 {
 }
 
 .extra-box {
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.78);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 20px 24px;
@@ -1244,6 +1250,7 @@ h2 {
   font-size: 1.3rem;
   color: var(--mint-dark);
   transition: transform 0.3s var(--ease-out);
+  flex-shrink: 0;
 }
 
 .faq-item.open .faq-icon {
@@ -1275,6 +1282,7 @@ h2 {
 .contact-box {
   position: relative;
   overflow: hidden;
+  background-color: #132A23;
   background: var(--forest);
   color: #FFFFFF;
   border-radius: 26px;
@@ -1364,8 +1372,8 @@ h2 {
 /* Scroll Reveal Animations */
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+  transform: translateY(20px);
+  transition: opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out);
 }
 
 .reveal.visible {
@@ -1373,10 +1381,10 @@ h2 {
   transform: translateY(0);
 }
 
-.delay-1 { transition-delay: 0.1s; }
-.delay-2 { transition-delay: 0.2s; }
-.delay-3 { transition-delay: 0.3s; }
-.delay-4 { transition-delay: 0.4s; }
+.delay-1 { transition-delay: 0.08s; }
+.delay-2 { transition-delay: 0.16s; }
+.delay-3 { transition-delay: 0.24s; }
+.delay-4 { transition-delay: 0.32s; }
 
 /* Mobile Nav */
 .nav-toggle {
@@ -1428,10 +1436,41 @@ h2 {
   }
 }
 
+@media (max-width: 600px) {
+  .hero {
+    padding: 44px 0 56px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .care-banner {
+    padding: 22px 20px;
+  }
+
+  .contact-box {
+    padding: 36px 20px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
